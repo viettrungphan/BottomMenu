@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BottomMenuView" customModule="BottomMenu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="525"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FkZ-4M-qii">
+                    <rect key="frame" x="0.0" y="0.0" width="452" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="m1n-YF-RjB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FkZ-4M-qii" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9Np-EJ-Ur7"/>
+                <constraint firstItem="FkZ-4M-qii" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9PK-2p-LhH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FkZ-4M-qii" secondAttribute="trailing" id="BIy-Fh-0tl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FkZ-4M-qii" secondAttribute="bottom" constant="447" id="ENH-v4-L7X"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="ENH-v4-L7X" id="iD1-S1-Nz2"/>
+                <outlet property="panView" destination="FkZ-4M-qii" id="hb9-4T-Ubl"/>
+            </connections>
+            <point key="canvasLocation" x="75.362318840579718" y="-8.3705357142857135"/>
+        </view>
+    </objects>
+</document>
